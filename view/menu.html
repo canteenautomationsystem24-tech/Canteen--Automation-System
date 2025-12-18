@@ -614,7 +614,7 @@
         `<div class="empty-list col-span-3 text-center">😕 No items found!</div>`
       : filtered.map(item => `
         <div class="menu-card">
-          <img src="${item.img||'https://via.placeholder.com/300x200?text=No+Image'}" alt="${item.name}" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;" onerror="this.src='https://via.placeholder.com/300x200?text=No+Image';">
+          <img src="${item.image_url||'https://via.placeholder.com/300x200?text=No+Image'}" alt="${item.name}" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;" onerror="this.src='https://via.placeholder.com/300x200?text=No+Image';">
           <div style="padding:1rem">
             <h3 class="font-bold text-xl mb-1">${item.name}</h3>
             <p class="text-gray-600 text-sm mb-2">${item.description||""}</p>
@@ -665,7 +665,7 @@
       let total = subtotal + tax;
       cartDiv.innerHTML = cart.map(item => `
         <div class='flex mb-4 items-center'>
-          <img src="${item.img}" style="width:50px;height:50px;object-fit:cover;border-radius:8px;margin-right:12px;" onerror="this.src='https://via.placeholder.com/50';">
+          <img src="${item.image_url}" style="width:50px;height:50px;object-fit:cover;border-radius:8px;margin-right:12px;" onerror="this.src='https://via.placeholder.com/50';">
           <div class="flex-1">
             <div class="font-bold">${item.name} (${item.quantity})</div>
             <div class="text-sm text-gray-500">₹${item.price * item.quantity}</div>
