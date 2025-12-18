@@ -458,7 +458,7 @@
   <!-- SIDEBAR -->
   <aside id="sidebar" class="bg-white border-r w-[220px] min-h-screen flex flex-col py-8 px-3 shadow-2xl">
     <div class="flex items-center gap-3 mb-10">
-      <img src="http://localhost:3000/images/piemr-logo.jpg" class="w-12 h-12 rounded-full border-2 border-[#ffaa23] bg-white" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Ccircle cx=%2224%22 cy=%2224%22 r=%2224%22 fill=%22%23ffaa23%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22%3EA%3C/text%3E%3C/svg%3E'"/>
+      <img src="https://canteen-automation-system.vercel.app/images/piemr-logo.jpg" class="w-12 h-12 rounded-full border-2 border-[#ffaa23] bg-white" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Ccircle cx=%2224%22 cy=%2224%22 r=%2224%22 fill=%22%23ffaa23%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22%3EA%3C/text%3E%3C/svg%3E'"/>
       <div>
         <span class="block text-xl font-black text-[#ffaa23]">ADMIN</span>
         <span class="block text-xs text-gray-500 font-semibold">Campus Canteen</span>
@@ -486,7 +486,7 @@
       </div>
       <div class="flex items-center gap-4">
         <span class="text-sm text-gray-500 font-semibold">PIEMR Canteen</span>
-        <img src="http://localhost:3000/images/piemr-logo.jpg" class="w-10 h-10 rounded-full border-2 border-[#ffaa23] bg-white" alt="PIEMR Logo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22%3E%3Ccircle cx=%2220%22 cy=%2220%22 r=%2220%22 fill=%22%23ffaa23%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2218%22 font-weight=%22bold%22%3EA%3C/text%3E%3C/svg%3E'"/>
+        <img src="https://canteen-automation-system.vercel.app/images/piemr-logo.jpg" class="w-10 h-10 rounded-full border-2 border-[#ffaa23] bg-white" alt="PIEMR Logo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22%3E%3Ccircle cx=%2220%22 cy=%2220%22 r=%2220%22 fill=%22%23ffaa23%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2218%22 font-weight=%22bold%22%3EA%3C/text%3E%3C/svg%3E'"/>
       </div>
     </header>
     
@@ -623,7 +623,7 @@
     </section>
 
     <footer class="bg-[#ffaa23] text-white text-center text-[15px] py-7 mt-auto rounded-t-3xl shadow-xl flex justify-center items-center gap-3">
-      <img src="http://localhost:3000/images/piemr-logo.jpg" class="w-8 h-8 rounded-full border-2 border-white shadow bg-white" alt="PIEMR" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2216%22 fill=%22%23ffaa23%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2214%22 font-weight=%22bold%22%3EA%3C/text%3E%3C/svg%3E'"/>
+      <img src="https://canteen-automation-system.vercel.app/images/piemr-logo.jpg" class="w-8 h-8 rounded-full border-2 border-white shadow bg-white" alt="PIEMR" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2216%22 fill=%22%23ffaa23%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2214%22 font-weight=%22bold%22%3EA%3C/text%3E%3C/svg%3E'"/>
       <span>&copy; 2025 Campus Canteen • PIEMR, Indore</span>
     </footer>
   </main>
@@ -725,7 +725,7 @@ function playSound(){
       const token = localStorage.getItem("jwtToken");
       if (!token) return;
 
-      const res = await fetch("http://localhost:3000/api/admin/orders", {
+      const res = await fetch("https://canteen-automation-system.vercel.app/api/admin/orders", {
         method: "GET",
         headers: {
           "Authorization": "Bearer " + token,
@@ -752,7 +752,7 @@ function playSound(){
       const token = localStorage.getItem("jwtToken");
       if (!token) return;
 
-      const res = await fetch("http://localhost:3000/api/admin/menu-items", {
+      const res = await fetch("https://canteen-automation-system.vercel.app/api/admin/menu-items", {
         method: "GET",
         headers: {
           "Authorization": "Bearer " + token,
@@ -778,7 +778,7 @@ async function fetchStock(){
       const token = localStorage.getItem("jwtToken");
       if (!token) return;
 
-      const res = await fetch("http://localhost:3000/api/admin/stocks", {
+      const res = await fetch("https://canteen-automation-system.vercel.app/api/admin/stocks", {
         method: "GET",
         headers: {
           "Authorization": "Bearer " + token,
@@ -834,7 +834,7 @@ async function handleImageSelect(event) {
 
   try {
     const response = await fetch(
-      'http://localhost:3000/api/upload/items/upload-image',
+      'https://canteen-automation-system.vercel.app/api/upload/items/upload-image',
       {
         method: 'POST',
         headers: {
@@ -927,7 +927,7 @@ async function submitMenuForm(e){
     return;
   }
   const res = await fetch(
-    `http://localhost:3000/api/admin/add/menu-item`,
+    `https://canteen-automation-system.vercel.app/api/admin/add/menu-item`,
     {
       method: "POST",
       headers: {
@@ -1006,7 +1006,7 @@ async function toggleAvailability(idx) {
         }
 
         const res = await fetch(
-          `http://localhost:3000/api/admin/menu-items/update-available/${menu[idx].id}`,
+          `https://canteen-automation-system.vercel.app/api/admin/menu-items/update-available/${menu[idx].id}`,
           {
             method: "PUT",
             headers: {
@@ -1046,7 +1046,7 @@ async function deleteDish(idx){
     }
 
     const res = await fetch(
-      `http://localhost:3000/api/admin/delete/menu/${menu[idx].id}`,
+      `https://canteen-automation-system.vercel.app/api/admin/delete/menu/${menu[idx].id}`,
       {
         method: "DELETE",
         headers: {
@@ -1087,7 +1087,7 @@ async function submitStockForm(e){
     return;
   }
   const res = await fetch(
-    `http://localhost:3000/api/admin/add/stock`,
+    `https://canteen-automation-system.vercel.app/api/admin/add/stock`,
     {
       method: "POST",
       headers: {
@@ -1132,7 +1132,7 @@ async function deleteStock(idx){
     }
     
     const res = await fetch(
-      `http://localhost:3000/api/admin/delete/stock/${stock[idx].id}`,
+      `https://canteen-automation-system.vercel.app/api/admin/delete/stock/${stock[idx].id}`,
       {
         method: "DELETE",
         headers: {
@@ -1201,7 +1201,7 @@ async function markOrderReady(idx) {
     }
 
     const res = await fetch(
-      `http://localhost:3000/api/admin/orders/update-status/${order.id}`,
+      `https://canteen-automation-system.vercel.app/api/admin/orders/update-status/${order.id}`,
       {
         method: "PUT",
         headers: {
@@ -1247,7 +1247,7 @@ async function markOrderPaid(idx) {
     }
 
     const res = await fetch(
-      `http://localhost:3000/api/admin/orders/update-payment-status/${order.id}`,
+      `https://canteen-automation-system.vercel.app/api/admin/orders/update-payment-status/${order.id}`,
       {
         method: "PUT",
         headers: {
@@ -1287,7 +1287,7 @@ async function deleteOrder(idx){
       return;
     }
     const res = await fetch(
-      `http://localhost:3000/api/admin/delete/order/${orders[idx].id}`,
+      `https://canteen-automation-system.vercel.app/api/admin/delete/order/${orders[idx].id}`,
       {
         method: "DELETE",
         headers: {
@@ -1322,7 +1322,7 @@ let users = [];
       }
 
       const res = await fetch(
-        "http://localhost:3000/api/admin/users",
+        "https://canteen-automation-system.vercel.app/api/admin/users",
         {
           headers: {
             "Authorization": "Bearer " + token
